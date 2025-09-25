@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tailwind Migration Starter</title>
+    <link rel="icon" href="data:,">
+    <!-- Tailwind build will be injected by Vite -->
+    <script type="module" crossorigin src="/assets/index-9OYUqjRx.js"></script>
+  </head>
+  <body class="min-h-screen bg-gray-50 text-gray-900 antialiased">
+    <!-- Navbar (Bootstrap .navbar .navbar-expand-lg .navbar-light .bg-light) => Tailwind -->
+    <header class="border-b bg-white">
+      <nav class="container flex items-center justify-between py-4">
+        <a href="#" class="text-lg font-semibold">Brand</a>
+        <button id="nav-toggle" class="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 lg:hidden" aria-controls="primary-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+          </svg>
+        </button>
+        <div id="primary-menu" class="hidden w-full lg:flex lg:w-auto lg:items-center lg:gap-6">
+          <a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-100">Home</a>
+          <a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-100">Features</a>
+          <a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-100">Pricing</a>
+          <a href="#" class="block px-3 py-2 rounded-md hover:bg-gray-100">About</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero (Bootstrap .jumbotron) => Tailwind -->
+    <section class="bg-gradient-to-r from-blue-50 to-indigo-50">
+      <div class="container py-16 text-center">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">Bootstrap → Tailwind Migration</h1>
+        <p class="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+          This starter illustrates how to convert common Bootstrap patterns to Tailwind utilities while keeping responsive behavior.
+        </p>
+        <div class="mt-6 flex items-center justify-center gap-3">
+          <a href="#" class="btn btn-primary">Primary action</a>
+          <a href="#" class="btn btn-secondary">Secondary action</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid (Bootstrap .container .row .col-*) => Tailwind -->
+    <main class="container py-10">
+      <h2 class="text-xl font-semibold mb-4">Cards grid</h2>
+      <div class="row">
+        <article class="card">
+          <div class="card-body">
+            <h3 class="text-lg font-semibold">Card title</h3>
+            <p class="mt-2 text-sm text-gray-600">Replaces .card .card-body with Tailwind utilities and custom component classes.</p>
+            <div class="mt-4">
+              <a class="btn btn-primary" href="#">Go somewhere</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-body">
+            <h3 class="text-lg font-semibold">Another card</h3>
+            <p class="mt-2 text-sm text-gray-600">Demonstrates consistent spacing and responsive grid using Tailwind.</p>
+            <div class="mt-4">
+              <a class="btn btn-secondary" href="#">Learn more</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-body">
+            <h3 class="text-lg font-semibold">Third card</h3>
+            <p class="mt-2 text-sm text-gray-600">Use this as a reference to refactor existing Bootstrap components.</p>
+            <div class="mt-4">
+              <a class="btn btn-primary" href="#">Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="border-t bg-white">
+      <div class="container py-6 text-center text-sm text-gray-500">
+        Tailwind Migration Template
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle to replace Bootstrap's JS collapse
+      const toggle = document.getElementById('nav-toggle');
+      const menu = document.getElementById('primary-menu');
+      toggle?.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', (!expanded).toString());
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
