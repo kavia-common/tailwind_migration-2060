@@ -8,7 +8,7 @@
     <!-- Tailwind build will be injected by Vite -->
   </head>
   <body class="min-h-screen bg-gray-50 text-gray-900 antialiased">
-    <!-- Navbar (Bootstrap .navbar .navbar-expand-lg .navbar-light .bg-light) => Tailwind -->
+    <!-- Navbar converted entirely to Tailwind -->
     <header class="border-b bg-white">
       <nav class="container flex items-center justify-between py-4">
         <a href="#" class="text-lg font-semibold">Brand</a>
@@ -27,7 +27,7 @@
       </nav>
     </header>
 
-    <!-- Hero (Bootstrap .jumbotron) => Tailwind -->
+    <!-- Hero -->
     <section class="bg-gradient-to-r from-blue-50 to-indigo-50">
       <div class="container py-16 text-center">
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">Bootstrap → Tailwind Migration</h1>
@@ -35,40 +35,40 @@
           This starter illustrates how to convert common Bootstrap patterns to Tailwind utilities while keeping responsive behavior.
         </p>
         <div class="mt-6 flex items-center justify-center gap-3">
-          <a href="#" class="btn btn-primary">Primary action</a>
-          <a href="#" class="btn btn-secondary">Secondary action</a>
+          <a href="#" class="btn btn-primary px-4 py-2">Primary action</a>
+          <a href="#" class="btn btn-secondary px-4 py-2">Secondary action</a>
         </div>
       </div>
     </section>
 
-    <!-- Grid (Bootstrap .container .row .col-*) => Tailwind -->
+    <!-- Grid converted from Bootstrap to Tailwind utilities -->
     <main class="container py-10">
       <h2 class="text-xl font-semibold mb-4">Cards grid</h2>
-      <div class="row">
-        <article class="card">
-          <div class="card-body">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <article class="bg-white rounded-lg shadow border border-gray-200">
+          <div class="p-4">
             <h3 class="text-lg font-semibold">Card title</h3>
             <p class="mt-2 text-sm text-gray-600">Replaces .card .card-body with Tailwind utilities and custom component classes.</p>
             <div class="mt-4">
-              <a class="btn btn-primary" href="#">Go somewhere</a>
+              <a class="btn btn-primary px-3 py-2" href="#">Go somewhere</a>
             </div>
           </div>
         </article>
-        <article class="card">
-          <div class="card-body">
+        <article class="bg-white rounded-lg shadow border border-gray-200">
+          <div class="p-4">
             <h3 class="text-lg font-semibold">Another card</h3>
             <p class="mt-2 text-sm text-gray-600">Demonstrates consistent spacing and responsive grid using Tailwind.</p>
             <div class="mt-4">
-              <a class="btn btn-secondary" href="#">Learn more</a>
+              <a class="btn btn-secondary px-3 py-2" href="#">Learn more</a>
             </div>
           </div>
         </article>
-        <article class="card">
-          <div class="card-body">
+        <article class="bg-white rounded-lg shadow border border-gray-200">
+          <div class="p-4">
             <h3 class="text-lg font-semibold">Third card</h3>
             <p class="mt-2 text-sm text-gray-600">Use this as a reference to refactor existing Bootstrap components.</p>
             <div class="mt-4">
-              <a class="btn btn-primary" href="#">Details</a>
+              <a class="btn btn-primary px-3 py-2" href="#">Details</a>
             </div>
           </div>
         </article>

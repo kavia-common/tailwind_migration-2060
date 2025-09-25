@@ -18,4 +18,6 @@ Migration approach (following kavia-docs/converting-bootstrap-to-tailwind.md):
 
 Note:
 - There is no Bootstrap CSS/JS dependency; all styles are from Tailwind.
+- Tailwind's stylesheet is imported in src/main.js via `import "./styles/tailwind.css"`.
 - Use src/styles/tailwind.css to add component-level class compositions for repeated patterns.
+- All residual Bootstrap classes were removed; grids and cards now use Tailwind utilities directly.

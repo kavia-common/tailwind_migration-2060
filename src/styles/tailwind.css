@@ -15,6 +15,12 @@
   .btn-secondary {
     @apply bg-gray-600 text-white hover:bg-gray-700 focus:ring-gray-400;
   }
+
+  /* Button sizing utilities similar to Bootstrap defaults */
+  .btn-sm { @apply px-3 py-1.5 text-sm; }
+  .btn-md { @apply px-4 py-2 text-sm; }
+  .btn-lg { @apply px-5 py-2.5 text-base; }
+
   .container {
     @apply mx-auto px-4 sm:px-6 lg:px-8;
   }
