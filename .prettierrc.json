@@ -6,5 +6,12 @@
   "tabWidth": 2,
   "arrowParens": "always",
   "endOfLine": "lf",
-  "plugins": []
+  "overrides": [
+    {
+      "files": ["*.css"],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
 }
