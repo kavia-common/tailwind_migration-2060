@@ -3,10 +3,18 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "description": "Vite + Tailwind CSS starter for migrating Bootstrap patterns to Tailwind utilities.",
+  "keywords": [
+    "vite",
+    "tailwindcss",
+    "static-site",
+    "frontend",
+    "migration"
+  ],
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0 --port 5173",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "vite preview --host 0.0.0.0 --port 5173",
     "postinstall": "echo \"Run npm run dev to start the project\""
   },
   "devDependencies": {
