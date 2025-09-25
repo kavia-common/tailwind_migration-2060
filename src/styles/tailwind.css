@@ -1,4 +1,4 @@
-/* Tailwind base layers */
+/* Tailwind core layers: required for Tailwind to function */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

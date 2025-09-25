@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Installs project dependencies non-interactively for the preview system.
+set -euo pipefail
+
+echo "Installing npm dependencies..."
+npm ci || npm install
+
+echo "Dependencies installed."
