@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Starts the development server for the preview system.
 set -euo pipefail
 
 echo "Starting dev server..."
