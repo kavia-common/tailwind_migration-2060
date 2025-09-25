@@ -1,7 +1,8 @@
 /* PUBLIC_INTERFACE */
-/** Entry script for the Tailwind Migration project.
- *  - Imports the Tailwind CSS so Vite/PostCSS process it and inject styles.
- *  - Add any interactive behavior that previously relied on Bootstrap JS here using vanilla JS or small utilities.
+/**
+ * Entry script for the Tailwind Migration project.
+ * - Imports the Tailwind CSS so Vite/PostCSS process it and inject styles.
+ * - Add any interactive behavior that previously relied on Bootstrap JS here using vanilla JS or small utilities.
  */
 import "./styles/tailwind.css";
 
